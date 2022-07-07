@@ -2,7 +2,13 @@
 
 This library is a small layer on top of [erusev/parsedown-extra](https://github.com/erusev/parsedown-extra).
 
-It currently adds support for: 
+It currently adds support for:
+
+- [Menulinks](#menulinks)
+
+## Installation
+
+`composer require roromedia/parsedown`
 
 ## Menulinks
 
