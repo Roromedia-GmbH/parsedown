@@ -1,0 +1,24 @@
+{
+  "name": "roromedia/parsedown",
+  "description": "A parsedown service with superpowers.",
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "erusev/parsedown-extra": "^0.8.1",
+    "symfony/string": "^6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Roromedia\\Parsedown\\": "src/"
+    }
+  },
+  "scripts": {
+    "post-install-cmd": "rm -rf .git"
+  },
+  "authors": [
+    {
+      "name": "Michael Brauner",
+      "email": "michael.brauner@roromedia.com"
+    }
+  ]
+}
