@@ -15,9 +15,9 @@ It currently adds support for:
 
 `composer require roromedia/parsedown`
 
-## Menulinks
+## Menu links
 
-You can define your Menulinks on top of your markdown pages. Normally these links would not work because the ids are
+You can define your Menu links on top of your markdown pages. Normally these links would not work because the ids are
 missing from the associated headings.
 
 This library solves the problem and connects them.
