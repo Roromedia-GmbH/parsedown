@@ -2,6 +2,11 @@
 
 This library is a small layer on top of [erusev/parsedown-extra](https://github.com/erusev/parsedown-extra).
 
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Roromedia-GmbH/parsedown/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/Roromedia-GmbH/parsedown/?branch=main)
+[![Code Coverage](https://scrutinizer-ci.com/g/Roromedia-GmbH/parsedown/badges/coverage.png?b=main)](https://scrutinizer-ci.com/g/Roromedia-GmbH/parsedown/?branch=main)
+[![Total Downloads](http://poser.pugx.org/roromedia/parsedown/downloads)](https://packagist.org/packages/roromedia/parsedown)
+[![License](http://poser.pugx.org/roromedia/parsedown/license)](https://packagist.org/packages/roromedia/parsedown)
+
 It currently adds support for:
 
 - [Menulinks](#menulinks)
