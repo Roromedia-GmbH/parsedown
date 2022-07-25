@@ -37,8 +37,8 @@ class Parsedown extends ParsedownExtra {
     return $matches[1] ?? NULL;
   }
 
-  private function explodeInLines(array|string|null $text): array {
-    return explode("\n", $text);
+  private function explodeInLines(string|null $text): array {
+    return $text ? explode("\n", $text) : [];
   }
 
   private function isHeadline(string $line): bool {
@@ -58,7 +58,7 @@ class Parsedown extends ParsedownExtra {
     return !empty($result) ? static::normalizeName(Arr::firstValue($result)) : FALSE;
   }
 
-  private function headlineContainsName(string $line, $name): bool {
+  private static function headlineContainsName(string $line, $name): bool {
     return static::extractHeadlineNameFromLine($line) === static::normalizeName($name);
   }
 
@@ -66,7 +66,7 @@ class Parsedown extends ParsedownExtra {
     $lines[$number] = substr_replace($line, sprintf(' id="%s"', $name), 3, 0);
   }
 
-  private function isValidHeadline(mixed $line, array|string|null $text): bool {
+  private function isValidHeadline(mixed $line, string $text): bool {
     return $this->isHeadline($line) && $this->headlineContainsOneOf($line, $this->getMenulinks($text));
   }
 
@@ -74,7 +74,7 @@ class Parsedown extends ParsedownExtra {
     return $this->headlineContainsOneOf($line, $this->getMenulinks($text));
   }
 
-  private function injectIdIntoHeadlineIfValid(mixed $line, array|string|null $text, array &$lines, int|string $number): void {
+  private function injectIdIntoHeadlineIfValid(mixed $line, string $text, array &$lines, int|string $number): void {
     $this->isValidHeadline($line, $text) && $this->injectIdIntoHeadline($line, $this->getMenulinkName($line, $text), $lines, $number);
   }
 
