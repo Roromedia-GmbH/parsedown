@@ -9,7 +9,7 @@ This library is a small layer on top of [erusev/parsedown-extra](https://github.
 
 It currently adds support for:
 
-- [Menulinks](#menulinks)
+- [Menu links](#menu-links)
 
 ## Installation
 
