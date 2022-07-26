@@ -15,6 +15,12 @@ It currently adds support for:
 
 `composer require roromedia/parsedown`
 
+## Usage
+
+```php
+new Parsedown())->text('your Markdown here')
+```
+
 ## Menu links
 
 You can define your Menu links on top of your markdown pages. Normally these links would not work because the ids are
@@ -49,4 +55,5 @@ A module for querying content inside TWIG-Templates
         href="https://www.drupal.org/project/twig_query">https://www.drupal.org/project/twig_query</a></p>
 ```
 
-As you can see - `<h1 id="installation">Installation</h1>` has the correct `id` and therefore the menu list is working again.
+As you can see - `<h1 id="installation">Installation</h1>` has the correct `id` and therefore the menu list is working
+again.
