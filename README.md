@@ -36,6 +36,11 @@ As an example:
 A module for querying content inside TWIG-Templates
 
 - [Installation](#installation)
+
+# Installation
+
+1. Install with composer:
+
 ```
 
 ... gets converted to:
@@ -47,12 +52,6 @@ A module for querying content inside TWIG-Templates
     <li><a href="#installation">Installation</a></li>
 </ul>
 <h1 id="installation">Installation</h1>
-<ol>
-    <li>Install with composer:</li>
-</ol>
-<pre><code class="language-shell">composer require drupal/twig_query</code></pre>
-<p>If you want to specify a version you can find all the tags under <code>Source code</code> on <a
-        href="https://www.drupal.org/project/twig_query">https://www.drupal.org/project/twig_query</a></p>
 ```
 
 As you can see - `<h1 id="installation">Installation</h1>` has the correct `id` and therefore the menu list is working
